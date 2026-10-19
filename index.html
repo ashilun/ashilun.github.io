@@ -79,6 +79,22 @@
 .asx .st:before{content:'';position:absolute;left:-34px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--wn)}
 .asx .st h3{font-weight:800;font-size:19px;margin-bottom:6px}
 .asx .note{display:block;font-family:'Prata',Georgia,serif;font-size:22px;line-height:1.3;margin-top:8px}
+/* ladder */
+.asx .doors{display:grid;gap:14px}
+.asx .lv{background:var(--milk);padding:28px 24px 26px;border-top:3px solid var(--gr)}
+.asx .lv.in{border-top-color:var(--wn)}
+.asx .lv .top{display:flex;justify-content:flex-end;align-items:baseline;gap:12px;margin-bottom:12px}
+.asx .lv .kind{font-weight:600;font-size:11px;letter-spacing:.24em;text-transform:uppercase;opacity:.65;text-align:right}
+.asx .lv h3{font-family:'Prata',Georgia,serif;font-weight:400;font-size:clamp(26px,6.6vw,34px);line-height:1.12;margin-bottom:10px}
+.asx .lv ul{list-style:none;margin:14px 0 4px}
+.asx .lv li{padding:9px 0 9px 22px;border-top:1px solid rgba(44,42,41,.16);position:relative;font-size:16px}
+.asx .lv li:before{content:'';position:absolute;left:0;top:19px;width:12px;height:1.5px;background:var(--wn)}
+.asx .lv .edge{margin-top:12px;font-size:15px;font-weight:600;color:var(--wn)}
+.asx .follow{margin-top:18px;padding:24px;border-left:3px solid var(--wn);background:rgba(246,241,236,.55)}
+.asx .follow .kind{font-weight:600;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--wn);margin-bottom:8px}
+.asx .follow h3{font-family:'Prata',Georgia,serif;font-weight:400;font-size:30px;line-height:1.12;margin-bottom:8px}
+@media(min-width:700px){.asx .doors{grid-template-columns:1fr 1fr}.asx .doors .lv{height:100%}}
+.asx .case .src{margin-top:10px;font-size:14px;opacity:.65}
 /* 10 price */
 .asx .price{background:var(--gr);color:var(--milk)} .asx .price .lab{color:var(--ca)}
 .asx .price .serif{font-size:clamp(28px,7.6vw,44px);line-height:1.15;margin-bottom:30px}
@@ -116,10 +132,10 @@
 <!-- 1 -->
 <section class="hero"><div class="w">
   <div class="lab">Anastasia Shilun · маркетолог-стратег</div>
-  <div class="caps" style="font-size:clamp(40px,11.4vw,80px);margin-bottom:14px">Вам не нужен ещё один маркетолог.</div>
-  <div class="serif" style="font-size:clamp(38px,10.6vw,70px);line-height:1.04;color:var(--wn);margin-bottom:34px">Вам нужны продажи.</div>
-  <p>Разбираюсь, на чём у вашего бизнеса держатся продажи и откуда их взять больше. Собираю всё до готового: что продавать, кому, где найти этих людей и как вести их до покупки.</p>
-  <div class="meta">Проект · 2–4 недели</div>
+  <div class="caps" style="font-size:clamp(40px,11.4vw,80px);margin-bottom:14px">Маркетолог-стратег.</div>
+  <div class="serif" style="font-size:clamp(34px,9.2vw,62px);line-height:1.06;color:var(--wn);margin-bottom:34px">Отвечаю за то, как бизнес находит покупателя и доводит его до покупки.</div>
+  <p>Разбираюсь, кому, в какой ситуации и почему нужен ваш продукт, определяю, что предлагать, где находить людей, как вести их к покупке и что менять по результатам.</p>
+  <div class="meta">Консультация · проект 2–4 недели · сопровождение</div>
   <div class="ctaw"><button type="button" class="btn ctab" id="asx-cta1">Обсудить задачу</button><div class="pills"><a href="https://t.me/Anastasia_Shilun" target="_blank">Telegram</a><a href="https://ig.me/m/anastasia_shilun" target="_blank">Instagram</a><a href="mailto:ashilun@gmail.com">Почта</a></div></div>
 </div></section>
 
@@ -133,7 +149,7 @@
     <div>Запускаете новый продукт и не знаете, как его продать.</div>
     <div>Продаж почти нет, хотя вы стараетесь.</div>
   </div>
-  <p class="note" style="margin-top:30px">В любом случае я начинаю с одного вопроса: откуда здесь могут прийти деньги.</p>
+  <p class="note" style="margin-top:30px">В любом случае я начинаю не с инструмента: сначала разбираюсь, где задача и что подтверждают данные.</p>
 </div></section>
 
 <!-- 3 -->
@@ -141,13 +157,13 @@
   <div class="lab">Как обычно бывает</div>
   <div class="serif">Задача ещё не названа.<br><em>А инструмент уже куплен.</em></div>
   <div class="tools">Новый сайт.<br>Реклама.<br>Ещё один подрядчик.</div>
-  <div class="end">Я начинаю раньше: с того, откуда возьмутся продажи.</div>
+  <div class="end">Я начинаю раньше: с того, кому и зачем нужен продукт и что должно произойти до покупки.</div>
 </div></section>
 
 <!-- 5 -->
 <section><div class="w">
   <div class="lab">Как я думаю</div>
-  <div class="q"><div class="serif">«Спросили цену и пропали. Это ещё не „дорого“.»</div><p>Чаще человек чего-то не понял до цены.</p></div>
+  <div class="q"><div class="serif">«Спросили цену и пропали. Это ещё не „дорого“.»</div><p>Цена только одна из версий. Смотрю, что человек видел до неё и что произошло после.</p></div>
   <div class="q"><div class="serif">«Реклама приводит людей. Продаёт то, что они видят дальше.»</div><p>Поэтому я не начинаю с рекламы.</p></div>
   <div class="q"><div class="serif">«Иногда больше продаж прячется не в новых клиентах.»</div><p>А в тех, кто уже записался, купил или почти купил.</p></div>
   <div class="path">Смотрю не на один канал, а на весь путь: от продукта и спроса до покупки и того, что происходит после.</div>
@@ -170,6 +186,12 @@
 <!-- 7 -->
 <section id="rabota"><div class="w">
   <div class="lab">Как выглядит моя работа</div>
+  <div class="case"><div class="tag">Центр здорового сна · самостоятельный разбор</div>
+    <div class="serif">Искала проблему в названии. Нашла её в записи.</div>
+    <p>Центр уже первый в поиске по запросам о сне. Но после клика человеку приходится самому понять, что проверить, к какому врачу идти и как записаться.</p>
+    <p class="to">Собрала одну понятную дорогу до проверки сна вместо ребрендинга. Сначала существующий спрос, потом реклама.</p>
+    <a class="more" href="case-centrsna.pdf" target="_blank">Открыть разбор</a>
+    <p class="src">По открытым данным. Центр не был моим клиентом.</p></div>
   <div class="case"><div class="tag">Cinderella Minsk · проектирование мебели</div>
     <div class="serif">Много внимания и семнадцать продуктов.</div>
     <p>Люди приходили, но путь вёл мимо главной услуги.</p>
@@ -194,13 +216,43 @@
     <div class="st"><h3>Исследование и решения</h3><p>Данных нет? Не додумываю, а отмечаю, что нужно проверить.</p></div>
     <div class="st"><h3>Передача на созвоне</h3><p>Что решили, что не трогаем, что первым, кто делает, как поймём, что двигаемся.</p></div>
   </div>
-  <p class="note">После проекта можно остаться на сопровождении: раз в месяц смотрим результаты и меняем приоритеты.</p>
+</div></section>
+
+<!-- formats -->
+<section class="beige" id="formaty"><div class="w">
+  <div class="lab">Форматы работы</div>
+  <h2>Можно прийти с одним участком. Можно сразу с задачей бизнеса.</h2>
+  <div class="doors">
+    <div class="lv in">
+      <div class="top"><span class="kind">Один канал целиком</span></div>
+      <h3>Консультация по Instagram</h3>
+      <p>Если Instagram для вас один из главных каналов продаж. Разбираю его не как SMM-специалист, а как коммерческий маршрут: что вы продаёте, кому и почему вас должны выбрать, как вас находят, чему верят, как контент ведёт к обращению и что происходит после.</p>
+      <ul>
+        <li><b>Позиционирование и предложение.</b> Что человек должен понять о вас, что ставить на первый план и как показать услуги.</li>
+        <li><b>Находимость и SEO внутри Instagram.</b> Имя, описание, ключевые слова, поисковые формулировки и точки входа.</li>
+        <li><b>Контент-стратегия и доказательства.</b> Какие темы и форматы ведут к решению, какие кейсы, отзывы и proof нужны.</li>
+        <li><b>Воронка, CTA, direct и скрипты.</b> Куда вести человека, что он получает дальше, как отвечать и переводить в запись или оплату.</li>
+      </ul>
+      <p class="edge">На выходе не список замечаний, а конкретные решения: что оставить, что изменить, что вынести вперёд и какие материалы собрать. Если проблема лежит глубже Instagram, в продукте, спросе, рынке или всей логике привлечения, скажу прямо: это уже задача стратегического проекта.</p>
+    </div>
+    <div class="lv">
+      <div class="top"><span class="kind">Основной формат · 2–4 недели</span></div>
+      <h3>Стратегический проект</h3>
+      <p>Весь маркетинг бизнеса: продукт, спрос, рынок, каналы, путь до покупки и после неё. На выходе решения, готовые материалы, план внедрения и передача на созвоне.</p>
+      <p class="edge">На проект можно прийти сразу. Консультация перед ним не нужна.</p>
+    </div>
+  </div>
+  <div class="follow">
+    <div class="kind">После проекта</div>
+    <h3>Сопровождение</h3>
+    <p>Раз в месяц разбираем новые данные, выбираем одну главную задачу месяца и корректируем решения. Один созвон 60 минут.</p>
+  </div>
 </div></section>
 
 <!-- 10 -->
 <section class="price" id="cena"><div class="w">
   <div class="lab">Стоимость</div>
-  <div class="serif">Зависит от задачи и состава проекта. Точную стоимость называю в личных сообщениях после короткого разговора.</div>
+  <div class="serif">Зависит от формата и задачи. Точную стоимость называю в личных сообщениях после короткого разговора.</div>
   <div class="ctaw"><button type="button" class="btn light ctab">Обсудить задачу</button><div class="pills"><a href="https://t.me/Anastasia_Shilun" target="_blank">Telegram</a><a href="https://ig.me/m/anastasia_shilun" target="_blank">Instagram</a><a href="mailto:ashilun@gmail.com">Почта</a></div></div>
   <p class="sub">Пока не готовы обсуждать проект? Напишите «ПУТЬ» в любой канал выше, пришлю самопроверку.</p>
 </div></section>
@@ -211,6 +263,7 @@
   <details><summary>Вы гарантируете клиентов?</summary><p>Нет. Я отвечаю за то, чтобы решения были обоснованы, а материалы собраны до конца. На сопровождении разбираю с вами фактические результаты и меняю решения по ним.</p></details>
   <details><summary>Мне нужна просто реклама.</summary><p>Возможно, так и есть. Но сначала важно понять, какую работу она должна сделать и куда привести человека. Если не хватает именно нового внимания, реклама станет частью решения.</p></details>
   <details><summary>А если данных мало?</summary><p>Работаем с тем, что есть. Чего не знаем, не придумываем, а закладываем способ проверить.</p></details>
+  <details><summary>У меня всё держится на Instagram. Нужен целый проект?</summary><p>Не обязательно. На консультации разбираю Instagram целиком: позиционирование, предложение, находимость, контент, доказательства, путь до обращения и direct. Если увижу, что причина лежит в продукте, спросе, рынке или других каналах, скажу прямо: это уже стратегический проект.</p></details>
   <details><summary>Вы переделаете весь маркетинг?</summary><p>Нет. Что работает, остаётся.</p></details>
   <details><summary>Работаете с агентствами?</summary><p>Да, как стратег под брендом агентства.</p></details>
 </div></section>
